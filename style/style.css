@@ -88,6 +88,7 @@
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 .subtitle {
   font-size: 16px;
@@ -110,7 +111,7 @@
   content: "";
   width: 66px;
   height: 66px;
-  border-radius: 33px;
+  border-radius: 40px;
   border: 3px solid #fed136;
   position: absolute;
   left: 50%;
@@ -137,26 +138,17 @@
   line-height: 22px;
 }
 .bascket::before {
-  background-image: url(../images/Icon-Basket.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: center no-repeat url(../images/Icon-Basket.png);
 }
 .laptop::before {
-  background-image: url(../images/Icon-Laptop.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: center no-repeat url(../images/Icon-Laptop.png);
 }
 .locked::before {
-  background-image: url(../images/Icon-Locked.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: center no-repeat url(../images/Icon-Locked.png);
 }
 /* -------------------FORM-------------------------- */
 .wrapper {
-  background-color: #222222;
-  background-image: url(../images/Map-Image.png);
-  background-repeat: no-repeat;
-  background-position: right;
+  background: no-repeat right #222222 url(../images/Map-Image.png);
 }
 .title-wrapper {
   font-size: 40px;
@@ -174,24 +166,27 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.short-input {
+  width: 46.27659574%;
+}
 .form-input {
   display: block;
-  width: 435px;
-  height: 50px;
+  width: 100%;
   border-radius: 2px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   margin-bottom: 26px;
   padding-left: 20px;
+  height: 50px;
 }
 .form-input:last-of-type {
   margin: 0px;
 }
-.subtitle:last-of-type {
+.subtitle:last-child {
   margin-bottom: 80px;
 }
 .text-area {
-  flex-basis: 435px;
+  flex-basis: 46.27659574%;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   padding-top: 17px;
