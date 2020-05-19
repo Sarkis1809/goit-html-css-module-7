@@ -97,26 +97,23 @@
   font-weight: 400;
   font-style: italic;
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 .service-list {
   display: flex;
   justify-content: space-between;
 }
 .service-item {
-  position: relative;
   margin-bottom: 120px;
 }
-.service-subtitle::before {
+.service-item::before {
   content: "";
   width: 66px;
   height: 66px;
   border-radius: 40px;
   border: 3px solid #fed136;
-  position: absolute;
-  left: 50%;
-  top: -30px;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
 }
 .service-subtitle {
   font-size: 18px;
@@ -167,17 +164,16 @@
   flex-wrap: wrap;
 }
 .short-input {
-  width: 46.27659574%;
+  width: 43.617021276%;
 }
 .form-input {
   display: block;
   width: 100%;
   border-radius: 2px;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 2px solid #cccccc;
   margin-bottom: 26px;
-  padding-left: 20px;
-  height: 50px;
+  padding: 20px;
 }
 .form-input:last-of-type {
   margin: 0px;
@@ -186,11 +182,10 @@
   margin-bottom: 80px;
 }
 .text-area {
-  flex-basis: 46.27659574%;
+  flex-basis: 43.617021276%;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  padding-top: 17px;
-  padding-left: 20px;
+  border: 2px solid #cccccc;
+  padding: 20px;
   resize: none;
 }
 .form-input::placeholder {
@@ -224,23 +219,24 @@
   text-align: center;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .form-input:required:focus:valid:not(:placeholder-shown) {
-  border: 1px solid green;
+  border: 2px solid green;
 }
 
 .form-input:required:focus:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 .form-input:focus {
   outline: none;
 }
 .text-area:required:focus:valid:not(:placeholder-shown) {
-  border: 1px solid green;
+  border: 2px solid green;
 }
 
 .text-area:required:focus:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 .text-area:focus {
   outline: none;
